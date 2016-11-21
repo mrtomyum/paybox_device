@@ -13,6 +13,8 @@ var wsUpgrader = websocket.Upgrader{
 }
 
 func Router(r *gin.Engine) *gin.Engine {
+	r.GET("/", GetClient)
+	r.POST("/bill", BillPost)
 	r.GET("/ws", func(c *gin.Context) {
 		ws(c.Writer, c.Request)
 	})
