@@ -2,8 +2,7 @@ package main
 
 import (
 	"github.com/gin-gonic/gin"
-
-	"github.com/mrtomyum/paybox_dev/ctrl"
+	"github.com/mrtomyum/paybox_device/ctrl"
 )
 
 func main() {
